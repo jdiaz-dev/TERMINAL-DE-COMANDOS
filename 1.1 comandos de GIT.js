@@ -207,6 +207,16 @@ COMMIT
 
 */
 
+/*  to see origins added remotely to git
+        git remote -v
+
+*/
+
+
+
+
+
+
 
 
 

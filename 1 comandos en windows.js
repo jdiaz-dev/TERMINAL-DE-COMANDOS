@@ -186,3 +186,8 @@
         comando  - extension a mover  - destio
 
 */
+
+/* 
+    to remove folder and its content
+        rmdir pathFolder /s /q
+*/
