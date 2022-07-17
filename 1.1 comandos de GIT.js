@@ -96,12 +96,12 @@ COMMIT
 /*
     VIDEO 11 reset y checkout
     para devolver un archivo que no queremos commitear
-        git reset HEAD "nombre del fichero"
+        1) git reset HEAD "nombre del fichero"
 
-        git reset .
+           git reset .
 
     para deschacer los cambios
-        git checkout "nombre del fichero"
+        2) git checkout "nombre del fichero"
 */
 
 /*  VIDEO 12 para eliminar los commit
@@ -136,7 +136,7 @@ COMMIT
     --para ver otras ramas
         git branch
 
-    --para movernos entre ramas
+    --para movernos entre ramas (tambien incluye ramas remotas)
         git ckeckout ramaDePruebas
         git checkout master
 */
@@ -255,6 +255,7 @@ git init
     **Lo siguiente son los otros dos comandos que ejecuta git pull
     --PARA VER SI TIENE NOVEDADES Y DESCARGALAS
         git fetch origin
+                1. if everything is updated, nothing will be fetched
 
         --LA SEGUNDA PARTE ES HACER UNA FUSION ENTRE NUESTRA RAMA REMOTA Y NUESTRA RAMA LOCAL
         git merge origin master
@@ -292,6 +293,8 @@ para cambiar de repositorio remoto
 
  */
 
+/* ===================================================== IN THE WORK */
+
 /*
     git push
         it add changes directly to github
@@ -304,9 +307,32 @@ para cambiar de repositorio remoto
             .env : file that I want to remove
  */
 
+/* 
+    to change branch and to pull together
+        git switch otherBranch
+*/
+
+/* 
+    to change branch without save changes
+        git checkout otherBranch --force  
+*/
 
 
+/* 
+    to create and change branch inmediatly
+        git checkout -b nameBranch 
+*/
 
+
+/* 
+    to download remote content
+        git fetch
+*/
+
+/* 
+    to list remote branch   
+        git branch -v -a
+*/
 
 
 
@@ -340,6 +366,11 @@ para cambiar de repositorio remoto
 
 */
 
+/* 
+    to check
+        git revert
+        difference between git pull nameBranch and git pull rebase origin nameBranch
+*/
 
 
 
