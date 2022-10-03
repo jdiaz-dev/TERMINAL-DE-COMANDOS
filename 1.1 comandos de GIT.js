@@ -334,7 +334,16 @@ para cambiar de repositorio remoto
         git branch -v -a
 */
 
+/* 
+    to retrieve deleted branch
+        1. search with 
+                git reflog
+                
+        2. create new branch with the deleted branch
+                     git checkout -b <your-branch> <sha>
+            example: git checkout -b reassingTerminalM bf3d8a0
 
+*/
 
 
 
