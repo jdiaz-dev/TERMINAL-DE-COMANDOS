@@ -105,7 +105,7 @@ COMMIT
 */
 
 /*  VIDEO 12 para eliminar los commit
-        git reset --hard HEAD~0
+        git reset --hard HEAD~0 (no remueve los cambios, solo los devuleve)
                             --cual va a ser el ultimo commit
                                 0 ultimo
                                 1 penultimo
@@ -115,7 +115,7 @@ COMMIT
         git reset --hard fd1a296
                          codigo del nuevo MASTER
 
-        **para eliminar el commit pero sin modificar el archivo  ================= interesting =========
+        **para eliminar el commit pero sin modificar o remover el archivo  ================= interesting =========
         git reset HEAD~0
                         --cual va a ser el ultimo commit
                             0 ultimo
@@ -194,6 +194,10 @@ COMMIT
 /*  VIDEO 18
     --para llevar por ejemplo un commit especifico de otra rama a master, esto evita hacer un merge completo con otra rama
         git cherry-pick idDelCommitDeLaOtraRama
+
+        git cherry-pick -m otraRama
+                        -m 2 : current is not mainline
+                        -m 1 : current branch is mainline
 
 
     --si añado otro un archivo en otra rama, ese archivo no podra ser visto en la rama master por ejemplo
@@ -345,9 +349,17 @@ para cambiar de repositorio remoto
 
 */
 
+/* 
+    to show commits from specific branch
+        git cherry -v develop hotfix/ReleaseAndReassign
+                      -no will display develop changes
+                      -it will show changes of hotfix/ReleaseAndReassign
+*/
 
-
-
+/* 
+    to display commis by author
+        git log --author=Jonath
+*/
 
 
 
@@ -383,3 +395,11 @@ para cambiar de repositorio remoto
 
 
 
+/* 
+    ============================================ CONTRIBUTING
+    
+    - to syncronize code with fork
+        git pull upstream --ff-only
+                        ff: fast forward
+
+*/
