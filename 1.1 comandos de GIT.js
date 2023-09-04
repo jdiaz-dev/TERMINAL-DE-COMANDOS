@@ -117,10 +117,15 @@ COMMIT
 
         **para eliminar el commit pero sin modificar o remover el archivo  ================= interesting =========
         git reset HEAD~0
+
+                        
                         --cual va a ser el ultimo commit
                             0 ultimo
                             1 penultimo
                             2 antepenultimo
+        -- used with Culqi and NaranjaX to fix my last commit 
+            git reset 91b0ff15cbbab17af9aa015887d782f5c79d7f15   
+                      - 91b0ff15cbbab17af9aa015887d782f5c79d7f15 is  the penultimate commit
 */
 
 /*  VIDEO 12 volver a un commit anterior (nos podemos desplazar por cualquier commit porque NO se han borrado, SOLO nos hemos deplazado)
