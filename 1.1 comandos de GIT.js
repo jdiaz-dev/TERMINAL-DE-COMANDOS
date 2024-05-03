@@ -366,7 +366,10 @@ para cambiar de repositorio remoto
         git log --author=Jonath
 */
 
-
+/* 
+    to revert a specific commit (it will return to the previous changes that you implement in the past time)
+        git revert -m 1 7f09fa9
+*/
 
 
 /* ============================================================================== GITLAB */
